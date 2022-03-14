@@ -16,8 +16,8 @@
 	@else if abs($index) > length($list) {
 		@warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
 	}
+	
 	@else {
-
 		$result: ();
 		$index: if($index < 0, length($list) + $index + 1, $index);
 
